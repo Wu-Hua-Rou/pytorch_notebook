@@ -23,6 +23,7 @@ class LinearModel(torch.nn.Module):
 model = LinearModel()
 
 #构造损失函数，不求均值，此方法需要两个参数，y^和y
+#这里损失函数：loss = (y - y^)**2
 criterion = torch.nn.MSELoss(size_average=False)
 
 #优化器

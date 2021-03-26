@@ -50,4 +50,4 @@ print('h=',model.linear.bias.item())
 #模型测试
 x_test = torch.Tensor([[4.0]])
 y_test = model(x_test)
-print('y_pred = ',y_test.data)
+print('y_pred = ',y_test.data.item())
